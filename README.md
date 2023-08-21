@@ -1,6 +1,6 @@
 # Atishae Assignment
 
-This is a SpringBoot project that implements two endpoints for creating a graph with nodes and checking connections between them.
+This is a SpringBoot project that implements two endpoints for creating a graph with nodes and checking connections between them. It consist of Service layer, controller and global exception handler. And having unit test for the service layer.
 
 ## Introduction
 
@@ -56,4 +56,8 @@ The purpose of this project is to provide functionality to create a graph by add
   joinNode(1, 2);
   joinNode(2, 3);
   boolean result = isConnected(1, 3); // This should return true
+  joinNode(1, 3);
+  joinNode(2, 3);
+  joinNode(7, 8);
+  boolean result = isConnected(1, 7); // This should return false
 
