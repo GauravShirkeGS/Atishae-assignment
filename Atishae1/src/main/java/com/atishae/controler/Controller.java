@@ -16,12 +16,15 @@ public class Controller {
 	@Autowired
 	private ServiceImpl ser;
 
+    // Post Method to join Nodes in graph 
+
 	@PostMapping("/atishae/{source}/{destination}")
 	public void joinNodeHandller( @PathVariable("source") Integer src,@PathVariable("destination") Integer des){
 		ser.joinNode(src, des);
 	}
 	
-	
+	// Get method to check connection of two nodes
+
 	@GetMapping("/atishae/{source}/{destination}")
 	public ResponseEntity<Boolean> checkConnectionHandller( @PathVariable("source") Integer src,@PathVariable("destination") Integer des){
 		Boolean flag = false;

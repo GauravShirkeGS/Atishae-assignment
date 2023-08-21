@@ -30,6 +30,7 @@ public class ServiceImpl implements com.atishae.service.Service {
 	        return checkConnection(a, b, visited);
 	}
 
+//   function for traverce over graph to check connectivity
 	 private boolean checkConnection(int src, int dest, Set<Integer> visited) {
 	        if (src == dest) {
 	            return true;

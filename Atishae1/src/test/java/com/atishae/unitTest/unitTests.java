@@ -17,7 +17,7 @@ public class unitTests {
 	        ser.joinNode(3, 4);
 	        ser.joinNode(4, 5);
 	        
-	        assertTrue(ser.isConnected(1, 5));
+	        assertTrue(ser.isConnected(1, 5)); //it should return true
 	    }
 	    
 	    @Test
@@ -27,7 +27,7 @@ public class unitTests {
 	    	 ser.joinNode(2, 3);
 	    	 ser.joinNode(4, 5);
 	        
-	        assertFalse(ser.isConnected(1, 5));
+	        assertFalse(ser.isConnected(1, 5)); //it should return false
 	    }
 	    
 	    @Test
@@ -38,7 +38,7 @@ public class unitTests {
 	    	 ser.joinNode(3, 4);
 	    	 ser.joinNode(4, 5);
 	        
-	        assertTrue(ser.isConnected(1, 1));
+	        assertTrue(ser.isConnected(1, 1));  //it should return true
 	    }
 	    
 	    @Test
@@ -49,7 +49,7 @@ public class unitTests {
 	    	 ser.joinNode(3, 4);
 	    	 ser.joinNode(4, 5);
 	        
-	        assertFalse(ser.isConnected(1, 6));
+	        assertFalse(ser.isConnected(1, 6));  //it should return false
 	    }
 	}
 
